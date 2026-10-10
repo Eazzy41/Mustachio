@@ -16,7 +16,8 @@ nav a{
     color: black;
     margin: 0 15px;
 }
-nav a:hover{
+nav a:hover,
+nav a.active{
     color: rgb(38, 164, 202);
 }
 .Banner{

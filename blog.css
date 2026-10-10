@@ -1,0 +1,149 @@
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.Mustache{
+    width: 500px;
+    height: 200px;
+}
+header{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 1000;
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+}
+nav a:hover,
+nav a.active{
+    color: rgb(38, 164, 202);
+}
+
+/* Main heading */
+.page-title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 180px;
+    margin: 0 auto 40px;
+    padding: 12px;
+    font-size: 25px;
+}
+
+/* Blog area */
+.blog-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Individual blog post */
+.blog-post {
+    display: flex;
+    align-items: center;
+    border: 2px solid #252525;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+/* Blog images */
+.blog-post img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Text beside the image */
+.blog-text {
+    padding: 20px;
+}
+
+.blog-text h3 {
+    font-size: 20px;
+    color: #252525;
+}
+
+.blog-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Read more link */
+.read-more {
+    display: inline-block;
+    background-color: #252525;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    background-color: #0ba39c;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(41, 40, 40);
+    color: white;
+    height: 80px;
+    text-align: center;
+    padding-top: 50px;
+} 
+
+footer p {
+    font-size: 13px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 13px;
+}
+
+/* Mobile view */
+@media screen and (max-width: 650px) {
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 12px;
+    }
+
+    .blog-container {
+        width: 90%;
+    }
+
+    .blog-post {
+        display: block;
+        padding: 12px;
+    }
+
+    .blog-post img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-text {
+        padding: 10px;
+    }
+
+    .page-title {
+        width: 150px;
+    }
+}
